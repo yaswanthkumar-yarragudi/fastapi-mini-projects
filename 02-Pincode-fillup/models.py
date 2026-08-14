@@ -24,7 +24,7 @@ class bulk_req(BaseModel):
 
         if len(values) == 0:
             raise ValueError("atleast one pincode needed")
-        if len(values) == 0:
+        if len(values) > 20:
             raise ValueError("Max 20 pincodes only allowed")
 
         return values
