@@ -48,5 +48,4 @@ def bulk(req:bulkReq):
         found_count=len(found),
         not_found_count=len(missing),
         invalid_count=len(invalid)
-        
     )
